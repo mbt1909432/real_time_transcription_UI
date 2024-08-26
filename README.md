@@ -11,8 +11,8 @@ Real-time Transcription UI is a practical tool designed to transcribe spoken con
 ## How to Use
 1. Download or clone this project.
 2. Download necessary components from requirements.txt
-3. Dowoload whisper models to "models" folder
-4. Download cnn.DLL to "CNN" folder
+3. Download faster-whisper models from https://huggingface.co/Systran/faster-whisper-large-v3 and put the models' folder to "models" folder
+4. Download cuDNN according to your CUDA version from https://github.com/Purfview/whisper-standalone-win/releases/tag/libs and unzips it to "CNN" folder
 5. Run app.py and start using it.
 
 contributions from interested individuals are welcome!
