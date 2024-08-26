@@ -1,2 +1,18 @@
 # real_time_transcription_UI
-A simple demo for real time transcription UI
+
+## Project Overview
+Real-time Transcription UI is a practical tool designed to transcribe spoken content in real-time, ideal for classroom settings and live broadcasts without subtitles. It helps users effortlessly capture every word, ensuring no key points are missed.
+
+## Key Features
+- **Real-time Transcription**: Easily follow along with spoken content.
+- **Automatic Audio Storage**: Automatically saves audio files at the end of conversations for later transcription.
+- **Quick Review**: Access transcribed content directly, saving time on replaying recordings.
+
+## How to Use
+1. Download or clone this project.
+2. Download necessary components from requirements.txt
+3. Dowoload whisper models to "models" folder
+4. Download cnn.DLL to "CNN" folder
+5. Run app.py and start using it.
+
+contributions from interested individuals are welcome!
