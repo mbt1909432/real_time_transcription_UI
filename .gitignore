@@ -1,0 +1,17 @@
+/.venv/
+
+/backup/
+
+cnn/*
+
+config/*
+
+models/*
+
+record_history/*
+
+reference/*
+
+test/*
+
+main.py
