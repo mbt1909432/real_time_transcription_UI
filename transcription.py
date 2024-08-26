@@ -1,11 +1,8 @@
 import json
 import os.path
 import queue
-import sys
 import tempfile
 import threading
-import tkinter
-from idlelib.iomenu import encoding
 from typing import Optional
 
 import speech_recognition as sr
@@ -15,9 +12,7 @@ from faster_whisper import WhisperModel
 from pydantic import BaseModel
 
 
-#一开始允许用户选择模型类型之类的。。。。
-#用户可以看到模型列表
-#用户可以选择cpu还是gpu
+
 class transcription_setting(BaseModel):
     model:Optional[str]=None
     device:Optional[str]=None

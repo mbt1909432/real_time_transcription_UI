@@ -1,13 +1,6 @@
-"""
-UI设定：
-选择模型
-选择gpu cpu
-选择麦克风
-"""
+
 import json
 import os.path
-import time
-from time import sleep
 from tkinter import *
 from tkinter import filedialog
 
@@ -16,7 +9,6 @@ import threading
 import queue
 
 import nltk
-from customtkinter import CTkOptionMenu
 from pydantic import  BaseModel
 from typing import  Optional
 

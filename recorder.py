@@ -2,20 +2,15 @@ import io
 import json
 import os.path
 import queue
-import sys
-import tempfile
-import threading
-import tkinter
+
 from time import sleep
 
 import speech_recognition as sr
 import time
 
-from joblib.externals.loky.backend.queues import Queue
 from pydantic import BaseModel
 from  typing import  Optional
 
-#from test.record_test.recoord import audio_data, wav_data
 
 
 class recorder_setting(BaseModel):

@@ -1,7 +1,6 @@
 import UI_Window
 import recorder
 import transcription
-from backup.UI_Window import ui_entity
 
 
 class app_entry:
