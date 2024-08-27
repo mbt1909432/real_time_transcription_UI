@@ -15,4 +15,14 @@ Real-time Transcription UI is a practical tool designed to transcribe spoken con
 4. Download cuDNN according to your CUDA version from https://github.com/Purfview/whisper-standalone-win/releases/tag/libs and unzips it to "CNN" folder
 5. Run app.py and start using it.
 
+## Current To-Do List
+
+Here are the main tasks I am working on:
+
+1. **Optimize UI Interface**
+2. **Optimize Thread Management**
+3. **Optimize Transcription Algorithm**
+4. **Add AI Summarization Feature**: Implement an AI-based summarization feature to provide concise summaries of the transcribed content.
+
+
 contributions from interested individuals are welcome!

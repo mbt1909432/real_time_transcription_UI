@@ -183,7 +183,7 @@ class WavFileReader_UI:
     def __init__(self,root:customtkinter.ctk_tk,transcription_command,disable_command):
         #
         self.conversion_button = customtkinter.CTkButton(root, text="Conversion", command=self.open_conversion_page)
-        self.conversion_button.pack(side='bottom', pady=20)
+        self.conversion_button.pack(side='bottom', pady=20,anchor='s')
 
         self.open_button = customtkinter.CTkButton(root, text="Please select your WAV file",command=self.open_wav_file)
         self.start_button=customtkinter.CTkButton(root, text="Start conversion")
@@ -213,19 +213,19 @@ class WavFileReader_UI:
         import  wave
         # 打开文件选择对话框
         file_path = filedialog.askopenfilename(
-            title="选择 WAV 文件",
+            title="Select a wave file",
             filetypes=(("WAV files", "*.wav"), ("All files", "*.*"))
         )
 
         if file_path:
             try:
-                # 打开并读取 WAV 文件
+
                 with wave.open(file_path, 'rb') as wav_file:
                     num_channels = wav_file.getnchannels()
                     sample_width = wav_file.getsampwidth()
                     frame_rate = wav_file.getframerate()
                     num_frames = wav_file.getnframes()
-                    # 在文本框中显示文件信息
+
                     self.text_box.delete("1.0", customtkinter.END)
                     self.text_box.insert(customtkinter.END, f"File: {file_path}\n")
                     self.text_box.insert(customtkinter.END, f"Channels: {num_channels}\n")
