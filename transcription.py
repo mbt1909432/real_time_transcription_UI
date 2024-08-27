@@ -75,7 +75,12 @@ class transcription_entity:
     def init_transcription(self):
         model_size = f"{self.model_directory_path}{self.config_setting.model}/"
         device=self.config_setting.device
-        self.model=WhisperModel(model_size, device=device, compute_type="int8_float16")
+        if device == 'cuda':
+            self.model = WhisperModel(model_size, device=device, compute_type="int8_float16")
+        else:
+            self.model = WhisperModel(model_size, device = "cpu", compute_type = "int8")
+
+
 
 
     def transcript_audio_to_text(self,file_path):
